@@ -1,6 +1,6 @@
-# Cape Verdean-American Cultural Festival Management System
+# Cape Verdean-American Cultural Festival Project
 
-![Cape Verde Flag](flag.png) *Celebrating Virtual Morabeza (Cape Verdean hospitality)*
+*Celebrating Virtual Morabeza (Cape Verdean hospitality)*
 
 ## Project Overview
 A Windows Forms application for managing participants in a Cape Verdean-American cultural festival, featuring:
@@ -10,8 +10,8 @@ A Windows Forms application for managing participants in a Cape Verdean-American
 - Celebration of Cabo Verde's rich diaspora heritage
 
 ## Specialized Classes
-This project honors:
-- **Morna**: The soulful music genre (UNESCO Intangible Heritage)
+This project showcases:
+- **Morna**: The music genre
 - **Funana**: Energetic accordion-driven dance
 - **Cachupa**: National dish symbolizing cultural fusion
 - **Morabeza**: The Cape Verdean philosophy of hospitality
