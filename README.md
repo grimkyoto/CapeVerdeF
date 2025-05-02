@@ -1,7 +1,5 @@
 # Cape Verdean-American Cultural Festival Project
-  ## Created by:
-   - **Aniyah Rodrigues**
-   - COP3366
+  ## Created by:**Aniyah Rodrigues** COP3366
      
 *Celebrating Virtual Morabeza (Cape Verdean hospitality)*
 
