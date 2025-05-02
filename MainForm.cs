@@ -86,6 +86,22 @@ namespace CapeVerdeCulturalFestival
             var category = cmbCategory.SelectedItem.ToString();
             pnlMorna.Visible = category == "Morna Music";
             pnlFunana.Visible = category == "Funana Dance";
-        }
+        private void btnExport_Click(object sender, EventArgs e)
+{
+    using (var saveDialog = new SaveFileDialog())
+    {
+        saveDialog.Filter = "CSV Files (*.csv)|*.csv";
+        saveDialog.Title = "Export Festival Data";
+        saveDialog.FileName = $"CapeVerdeFestival_{DateTime.Now:yyyyMMdd}.csv";
+        
+        if (saveDialog.ShowDialog() == DialogResult.OK)
+        {
+            _manager.ExportToCSV(saveDialog.FileName);
+            MessageBox.Show($"Exported {_manager.Participants.Count} participants!\n" +
+             $"Managed by: {_manager.ManagerName}",
+            "Export Complete", 
+             MessageBoxButtons.OK, 
+             MessageBoxIcon.Information);
+        }        
     }
 }
