@@ -43,6 +43,15 @@ namespace CapeVerdeCulturalFestival
             btnAddParticipant.Text = "Add Participant";
             btnAddParticipant.Click += btnAddParticipant_Click;
             this.Controls.Add(btnAddParticipant);
+            var btnExport = new Button
+            {
+            Text = "Export to CSV",
+            Location = new Point(300, 350),
+            BackColor = Color.Gold,
+            ForeColor = Color.Blue
+            };
+            btnExport.Click += btnExport_Click;
+            this.Controls.Add(btnExport);
             
             // listbox
             lstParticipants = new ListBox();
