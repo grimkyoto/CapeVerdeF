@@ -1,75 +1,91 @@
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace CapeVerdeCulturalFestival
 {
     public partial class MainForm : Form
     {
-        private List<Participant> participants = new List<Participant>();
-        
+        private readonly FestivalManager _manager = new FestivalManager();
+
         public MainForm()
         {
             InitializeComponent();
+            SetupCulturalUI();
         }
 
-        private void btnAddParticipant_Click(object sender, EventArgs e)
+        private void SetupCulturalUI()
+        {
+            // colours
+            this.BackColor = Color.FromArgb(0, 102, 179); // CV flag blue
+            lblTitle.ForeColor = Color.White;
+            lblStats.ForeColor = Color.Gold;
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
         {
             try
             {
-                // Get input from form controls
-                string name = txtName.Text;
-                string category = cmbCategory.SelectedItem.ToString();
-                string contact = txtContact.Text;
-                
-                // Validate input
-                if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(category))
+                var participant = CreateParticipant();
+                if (_manager.RegisterParticipant(participant))
                 {
-                    MessageBox.Show("Please enter name and select category");
-                    return;
+                    RefreshUI();
+                    MessageBox.Show($"Registered for {participant.Category}!", "Success", 
+                                  MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-
-                // Create participant
-                Participant newParticipant = new Participant(name, category, contact);
-                participants.Add(newParticipant);
-                
-                // Update display
-                RefreshParticipantList();
-                
-                // Clear inputs
-                txtName.Text = "";
-                cmbCategory.SelectedIndex = -1;
-                txtContact.Text = "";
-                
-                MessageBox.Show("Participant added successfully!");
             }
-            catch (Exception ex)
+            catch (ArgumentException ex)
             {
-                MessageBox.Show($"Error: {ex.Message}");
+                MessageBox.Show(ex.Message, "Cultural Validation", 
+                              MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
-        private void RefreshParticipantList()
+        private Participant CreateParticipant()
+        {
+            return cmbCategory.SelectedItem.ToString() switch
+            {
+                "Morna Music" => new MornaParticipant(
+                    txtName.Text,
+                    txtContact.Text,
+                    chkTraditional.Checked,
+                    txtInstrument.Text),
+
+                "Funana Dance" => new FunanaDanceParticipant(
+                    txtName.Text,
+                    txtContact.Text,
+                    (int)numDancers.Value),
+
+                _ => new Participant(
+                    txtName.Text,
+                    cmbCategory.SelectedItem.ToString(),
+                    txtContact.Text)
+            };
+        }
+
+        private void RefreshUI()
         {
             lstParticipants.Items.Clear();
-            foreach (Participant p in participants)
+            foreach (var p in _manager.Participants)
             {
-                lstParticipants.Items.Add($"{p.Name} - {p.Category}");
+                lstParticipants.Items.Add(p.GetDisplayInfo());
             }
+            UpdateCulturalStats();
         }
-    }
 
-    public class Participant
-    {
-        public string Name { get; set; }
-        public string Category { get; set; }
-        public string ContactInfo { get; set; }
-
-        public Participant(string name, string category, string contactInfo)
+        private void UpdateCulturalStats()
         {
-            Name = name;
-            Category = category;
-            ContactInfo = contactInfo;
+            lblStats.Text = _manager.GetCulturalStats();
+            lblTotalFees.Text = $"Total Fees: {_manager.GetTotalFees():C}";
+        }
+
+        private void cmbCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // show/hide control
+            var category = cmbCategory.SelectedItem.ToString();
+            pnlMorna.Visible = category == "Morna Music";
+            pnlFunana.Visible = category == "Funana Dance";
         }
     }
 }
