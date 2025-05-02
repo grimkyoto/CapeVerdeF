@@ -1,0 +1,4 @@
+C:\Users\aniya\Downloads\CapeVerdeAmFestival-main\CapeVerdeF\obj\Release\net9.0\win-x64\CapeVerdeF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aniya\Downloads\CapeVerdeAmFestival-main\CapeVerdeF\obj\Release\net9.0\win-x64\CapeVerdeF.AssemblyInfoInputs.cache
+C:\Users\aniya\Downloads\CapeVerdeAmFestival-main\CapeVerdeF\obj\Release\net9.0\win-x64\CapeVerdeF.AssemblyInfo.cs
+C:\Users\aniya\Downloads\CapeVerdeAmFestival-main\CapeVerdeF\obj\Release\net9.0\win-x64\CapeVerdeF.csproj.CoreCompileInputs.cache

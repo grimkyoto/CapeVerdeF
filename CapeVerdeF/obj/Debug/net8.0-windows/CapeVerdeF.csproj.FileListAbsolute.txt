@@ -1,0 +1,14 @@
+C:\Users\aniya\Downloads\CapeVerdeAmFestival-main\CapeVerdeF\bin\Debug\net8.0-windows\CapeVerdeF.exe
+C:\Users\aniya\Downloads\CapeVerdeAmFestival-main\CapeVerdeF\bin\Debug\net8.0-windows\CapeVerdeF.dll
+C:\Users\aniya\Downloads\CapeVerdeAmFestival-main\CapeVerdeF\obj\Debug\net8.0-windows\CapeVerdeF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aniya\Downloads\CapeVerdeAmFestival-main\CapeVerdeF\obj\Debug\net8.0-windows\CapeVerdeF.AssemblyInfoInputs.cache
+C:\Users\aniya\Downloads\CapeVerdeAmFestival-main\CapeVerdeF\obj\Debug\net8.0-windows\CapeVerdeF.AssemblyInfo.cs
+C:\Users\aniya\Downloads\CapeVerdeAmFestival-main\CapeVerdeF\obj\Debug\net8.0-windows\CapeVerdeF.csproj.CoreCompileInputs.cache
+C:\Users\aniya\Downloads\CapeVerdeAmFestival-main\CapeVerdeF\obj\Debug\net8.0-windows\CapeVerdeF.dll
+C:\Users\aniya\Downloads\CapeVerdeAmFestival-main\CapeVerdeF\obj\Debug\net8.0-windows\refint\CapeVerdeF.dll
+C:\Users\aniya\Downloads\CapeVerdeAmFestival-main\CapeVerdeF\obj\Debug\net8.0-windows\CapeVerdeF.pdb
+C:\Users\aniya\Downloads\CapeVerdeAmFestival-main\CapeVerdeF\bin\Debug\net8.0-windows\CapeVerdeF.deps.json
+C:\Users\aniya\Downloads\CapeVerdeAmFestival-main\CapeVerdeF\bin\Debug\net8.0-windows\CapeVerdeF.runtimeconfig.json
+C:\Users\aniya\Downloads\CapeVerdeAmFestival-main\CapeVerdeF\bin\Debug\net8.0-windows\CapeVerdeF.pdb
+C:\Users\aniya\Downloads\CapeVerdeAmFestival-main\CapeVerdeF\obj\Debug\net8.0-windows\CapeVerdeF.genruntimeconfig.cache
+C:\Users\aniya\Downloads\CapeVerdeAmFestival-main\CapeVerdeF\obj\Debug\net8.0-windows\ref\CapeVerdeF.dll
