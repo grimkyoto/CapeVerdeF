@@ -5,15 +5,13 @@
 ## Project Overview
 A Windows Forms application for managing participants in a Cape Verdean-American cultural festival, featuring:
 - Registration of performers in traditional categories (Morna, Funana, Batuque, etc.)
-- Cultural data validation
 - Participant tracking with statistics
-- Celebration of Cabo Verde's rich diaspora heritage
 
 ## Specialized Classes
 This project showcases:
 - **Morna**: The music genre
-- **Funana**: Energetic accordion-driven dance
-- **Cachupa**: National dish symbolizing cultural fusion
+- **Funana**: Energetic dance
+- **Cachupa**: National dish 
 - **Morabeza**: The Cape Verdean philosophy of hospitality
 
 ## Tutorial
@@ -29,4 +27,9 @@ This project showcases:
 3. **Save/Load Data**:
    - Export to CSV
    - Preserve historical participation data
+  
+   - ## Created by:
+   - **Aniyah Rodrigues**
+   - COP3366
+   - 
 
