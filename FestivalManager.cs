@@ -37,3 +37,6 @@ Batuque: {Participants.Count(p => p.Category == "Batuque Performance")} circles"
         public decimal GetTotalFees() => Participants.Sum(p => p.FeePaid);
     }
 }
+        public decimal GetTotalFees() => Participants.Sum(p => p.FeePaid);
+    }
+}
