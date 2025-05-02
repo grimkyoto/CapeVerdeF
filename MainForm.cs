@@ -12,13 +12,14 @@ namespace CapeVerdeCulturalFestival
         public MainForm()
         {
             InitializeComponent();
+            _manager.ManagerName = "Aniyah Rodrigues";
             SetupCulturalUI();
         }
 
         private void SetupCulturalUI()
         {
-            // colours
-            this.BackColor = Color.FromArgb(0, 102, 179); // CV flag blue
+            // flag colours
+            this.BackColor = Color.FromArgb(0, 102, 179);
             lblTitle.ForeColor = Color.White;
             lblStats.ForeColor = Color.Gold;
         }
