@@ -1,6 +1,6 @@
 # Cape Verdean Festival App - Quick Guide
 
-![App Screenshot](screenshot(385).png)  
+![App Screenshot](Screenshot(385).png)  
 *Fig 1: Main application interface*
 
 ## How To Register Participants
